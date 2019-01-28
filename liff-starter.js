@@ -54,6 +54,7 @@ function getP(){
         makeAudio();
         makeSticker();
         meProfile();
+        makeFlex();
     }
     }
 
@@ -193,7 +194,7 @@ function meProfile(){
     });
 }
 
-function flexmessage() {
+function makeFlex() {
     var tipe = getParameterByName('type');
     if (tipe === 'flex') {
         // var stk = getParameterByName('stk')
