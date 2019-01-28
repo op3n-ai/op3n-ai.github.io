@@ -192,3 +192,28 @@ function meProfile(){
         }
     });
 }
+
+function flexmessage() {
+    var tipe = getParameterByName('type');
+    if (tipe === 'flex') {
+        // var stk = getParameterByName('stk')
+        liff.sendMessages([{
+            type: "template",
+            altText: "Sticker",
+            template: {
+                type: "image_carousel",
+                columns: [
+                    {
+                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        action: {
+                            type: "uri",
+                            uri: "https://i.imgur.com/X15vdl5.jpg"
+                        }
+                    }
+                ]
+            }
+        }]).then(function () {
+            liff.closeWindow();
+        });
+    }
+}
