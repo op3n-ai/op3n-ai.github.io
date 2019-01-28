@@ -52,9 +52,9 @@ function getP(){
         makeImage();
         makeVideo();
         makeAudio();
+        makeFlex();
         makeSticker();
         meProfile();
-        makeFlex();
     }
     }
 
