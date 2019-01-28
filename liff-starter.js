@@ -141,17 +141,20 @@ function makeSticker(){
             ep = "/IOS/sticker@2x.png";
         }
         liff.sendMessages([{
-          type: "template",
-          altText: "Sticker",
-          template: {
-             type: "image_carousel",
-             columns: [{
-                 imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/"+sid+ep,
-                 action: {
-                     type: "uri",
-                     uri: "line://shop/sticker/detail/"+pkg}}
-                          ]
+            type: "template",
+            altText: "Flex",
+            template: {
+                type: "image_carousel",
+                columns: [
+                    {
+                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        action: {
+                            type: "uri",
+                            uri: "https://i.imgur.com/X15vdl5.jpg"
                         }
+                    }
+                ]
+            }
         }]).then(function () {
             liff.closeWindow();
         });
