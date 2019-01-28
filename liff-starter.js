@@ -199,7 +199,7 @@ function flexmessage() {
         // var stk = getParameterByName('stk')
         liff.sendMessages([{
             type: "template",
-            altText: "Sticker",
+            altText: "Flex",
             template: {
                 type: "image_carousel",
                 columns: [
