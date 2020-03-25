@@ -61,6 +61,11 @@ function getP(){
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
+
+    if (/(%3F|%3D)/.test(url)) {
+        url = decodeURIComponent(url);
+    }
+
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
         results = regex.exec(url);
