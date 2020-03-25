@@ -6,6 +6,7 @@ window.onload = function (e) {
 
 function getP(){
     var tipe = getParameterByName('type')
+    console.log(tipe)
     if (!tipe) {
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
