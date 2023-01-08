@@ -430,7 +430,7 @@ function sendMessages(messages) {
             });
         }
     } else {
-        console.info("Start sending message");
+        console.info("Start sending message : " + messages);
         liff.sendMessages(messages).then(() => {
             console.info("Success sending message");
             liff.closeWindow();
