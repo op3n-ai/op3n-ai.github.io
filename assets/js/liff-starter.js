@@ -304,7 +304,7 @@ function sendLiffMessage() {
                                 action: {
                                     type: "uri",
                                     label: "Square",
-                                    uri: "https://line.me/ti/g2/JGUODBE4RE"
+                                    uri: "line.me/ti/g2/13VJC-eVhb0UNGA8d0bhHRTMgN-5QbmkGFf5SA"
                                 },
                                 flex: 1
                             },
